@@ -1,7 +1,7 @@
 {
   "name": "primavera",
   "displayName": "Primavera",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build B2B prospect lists from Google Maps places and their websites (emails, phones, websites, executives) with Primavera, from Claude: target in plain words, count, estimate, create, download.",
   "author": {
     "name": "Primavera",
