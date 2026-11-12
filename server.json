@@ -1,0 +1,41 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.primaverapp/primavera",
+  "title": "Primavera",
+  "description": "Prospect lists of businesses from Google Maps and their websites: target, count, export with emails.",
+  "version": "1.0.0",
+  "websiteUrl": "https://primaverapp.com/docs/api#from-claude-cursor-or-codex-mcp",
+  "repository": {
+    "url": "https://github.com/Primavera-SaaS/primavera-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://primaverapp.com/images/brand/primavera-mark.png",
+      "mimeType": "image/png",
+      "sizes": ["1024x1024"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://primaverapp.com/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Your Primavera API key as a Bearer token. Keys are created at https://primaverapp.com/dashboard/api (Pro or Agency subscription).",
+          "isRequired": true,
+          "isSecret": true,
+          "value": "Bearer {api_key}",
+          "variables": {
+            "api_key": {
+              "description": "Primavera API key (pv_live_ followed by 32 letters and digits).",
+              "isRequired": true,
+              "isSecret": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

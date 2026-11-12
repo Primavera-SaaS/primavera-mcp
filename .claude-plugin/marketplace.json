@@ -1,0 +1,17 @@
+{
+  "name": "primavera",
+  "owner": {
+    "name": "Primavera",
+    "url": "https://primaverapp.com"
+  },
+  "description": "The Primavera plugin for Claude Code: B2B prospect lists from Google Maps places and their websites.",
+  "plugins": [
+    {
+      "name": "primavera",
+      "source": "./",
+      "description": "Build B2B prospect lists with Primavera from Claude: target in plain words, count, estimate, create, download.",
+      "category": "productivity",
+      "tags": ["lead generation", "prospecting", "google maps", "b2b data"]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "primavera",
+  "displayName": "Primavera",
+  "version": "1.0.0",
+  "description": "Build B2B prospect lists from Google Maps places and their websites (emails, phones, websites, executives) with Primavera, from Claude: target in plain words, count, estimate, create, download.",
+  "author": {
+    "name": "Primavera",
+    "url": "https://primaverapp.com"
+  },
+  "homepage": "https://primaverapp.com",
+  "repository": "https://github.com/Primavera-SaaS/primavera-mcp",
+  "license": "MIT",
+  "keywords": ["lead generation", "prospect lists", "google maps", "b2b data", "email finder", "local businesses", "mcp"],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://primaverapp.com/docs/api",
+  "supportUrl": "https://primaverapp.com/contact",
+  "privacyPolicyUrl": "https://primaverapp.com/privacy",
+  "termsOfServiceUrl": "https://primaverapp.com/terms",
+  "userConfig": {
+    "primavera_api_key": {
+      "type": "string",
+      "title": "Primavera API key",
+      "description": "Your API key (pv_live_…), created at https://primaverapp.com/dashboard/api. The API needs a Pro or Agency subscription.",
+      "sensitive": true
+    }
+  },
+  "mcpServers": {
+    "primavera": {
+      "type": "http",
+      "url": "https://primaverapp.com/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.primavera_api_key}"
+      }
+    }
+  }
+}
