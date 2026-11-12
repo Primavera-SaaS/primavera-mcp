@@ -2,7 +2,6 @@
 name: prospect-lists
 description: Build B2B prospect lists with Primavera, a database of businesses from Google Maps read with their websites (email addresses, phone numbers, websites, executives). Use when the user wants leads, a prospect list, an email list of businesses of a trade in a place ("plumbers in Lyon", "independent restaurants in Texas"), or to count, preview, export or enrich local businesses by category and area.
 license: MIT
-allowed-tools: mcp__plugin_primavera_primavera__get_account, mcp__plugin_primavera_primavera__find_areas, mcp__plugin_primavera_primavera__find_categories, mcp__plugin_primavera_primavera__find_networks, mcp__plugin_primavera_primavera__count_search, mcp__plugin_primavera_primavera__get_search_metrics, mcp__plugin_primavera_primavera__preview_search, mcp__plugin_primavera_primavera__estimate_list, mcp__plugin_primavera_primavera__list_lists, mcp__plugin_primavera_primavera__get_list, mcp__plugin_primavera_primavera__get_list_items, mcp__plugin_primavera_primavera__prepare_list_file, mcp__plugin_primavera_primavera__get_list_file, mcp__plugin_primavera_primavera__estimate_list_job, mcp__plugin_primavera_primavera__get_job
 ---
 
 # Prospect lists with Primavera
